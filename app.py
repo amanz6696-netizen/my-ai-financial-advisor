@@ -5,11 +5,13 @@ import google.generativeai as genai
 from PIL import Image
 
 # =========================================================================
-# 1. HARDCODED FREE API KEY (Bypasses all advanced secrets configurations)
+# 1. HARDCODED FREE API KEY 
 # =========================================================================
-GEMINI_API_KEY = "AQ.Ab8RN6JadTjQ9aq5dg9wgYzL_0GuKvID7nUMsbuPDSghXGuhSQ"
+# CRUCIAL: Replace the text inside the quotes below with your real Gemini key.
+# Your working key MUST begin with the letters "AIzaSy".
+GEMINI_API_KEY = "PASTE_YOUR_AIzaSy_KEY_HERE"
 
-# Configure the free Google AI library directly using your key
+# Configure the free Google AI library using your key
 genai.configure(api_key=GEMINI_API_KEY)
 
 # =========================================================================
