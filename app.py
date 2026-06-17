@@ -9,7 +9,7 @@ from PIL import Image
 # =========================================================================
 # CRUCIAL: Replace the text inside the quotes below with your real Gemini key.
 # Your working key MUST begin with the letters "AIzaSy".
-GEMINI_API_KEY = "PASTE_YOUR_AIzaSy_KEY_HERE"
+
 
 # Configure the free Google AI library using your key
 genai.configure(api_key=GEMINI_API_KEY)
