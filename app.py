@@ -3,15 +3,16 @@ import requests
 import xml.etree.ElementTree as ET
 import google.generativeai as genai
 from PIL import Image
+import os
 
 # =========================================================================
 # 1. HARDCODED FREE API KEY 
 # =========================================================================
-# CRUCIAL: Replace the text inside the quotes below with your real Gemini key.
-# Your working key MUST begin with the letters "AIzaSy".
+# The variable name here is now perfectly aligned to fix the NameError
+GEMINI_API_KEY = "AQ.Ab8RN6JadTjQ9aq5dg9wgYzL_0GuKvID7nUMsbuPDSghXGuhSQ"
 
-
-# Configure the free Google AI library using your key
+# Configure the environment and free library with matching variable names
+os.environ["GEMINI_API_KEY"] = GEMINI_API_KEY
 genai.configure(api_key=GEMINI_API_KEY)
 
 # =========================================================================
